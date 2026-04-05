@@ -62,8 +62,11 @@ git clone https://github.com/SamKlvr/banner-bot.git
 cd banner-bot
 cp .env.example .env
 # заполнить .env своими токенами
+# обязательно для Linux-сервера:
 npm install
 npm start
 ```
+
+Важно: на Linux-сервере перед первым запуском обязательно выполнить `npm install`, потому что зависимости в репозитории не хранятся.
 
 Если сервер запускается через `systemd` или `pm2`, сначала проверь обычный ручной старт через `npm start`.
